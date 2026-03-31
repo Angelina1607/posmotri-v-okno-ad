@@ -1,1 +1,1 @@
-https://github.com/Angelina1607/posmotri-v-okno-ad/tree/main
+https://github.com/Angelina1607/posmotri-v-okno-ad
