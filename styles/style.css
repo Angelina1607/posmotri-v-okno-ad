@@ -8,6 +8,15 @@ html {
   block-size: 100%;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 .page {
   display: flex;
   inline-size: 1200px;
@@ -72,6 +81,38 @@ ol {
   align-items: start;
 }
 
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.search-form__textfield {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-right: none;
+  border-left: none;
+  padding: 2.5px 14px 2.5px 0;
+  font-family: inherit;
+  font-size: inherit;
+  width: 225px;
+}
+
+.search-form__textfield::placeholder{
+  color: rgb(255 255 255 /70%);
+  width: fit-content;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+}
+
 .content__details {
   width: 100%;
   grid-area: content__details;
@@ -79,12 +120,66 @@ ol {
 
 .title {
   margin-bottom: 26px;
+  height: 210px;
+  font-weight: bold;
+  font-family: Oswald;
+  font-size: 75px;
+  letter-spacing: 0;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list-container {
   overflow: auto;
   max-height: 298px;
 }
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.content__video-card-title {
+  margin-bottom: 6px;
+  max-width: 196px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Oswald;
+  font-size: 30px;
+  line-height: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content__video-card-description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 196px;
+  height: 17px;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
 
 
 
